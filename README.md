@@ -9,3 +9,4 @@ then do a cd src to go to source folder and do a python manage.py runsever
 BINGO
 Server is running
 Go to http://127.0.0.1:8000/
+/u/shaggynick33 for one of the profiles
