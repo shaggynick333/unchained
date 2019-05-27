@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Hello World</h3>
+<p>{% if bool %}
+  Random number is {{num}}
+{%endif%}
+</p>
+<p>
+  {% for item in list %}
+    {{item}}<br>
+    {% if item|divisibleby:"2" %}
+      Even
+    {% endif %}
+  {% endfor %}
+</p>
+{% endblock %}

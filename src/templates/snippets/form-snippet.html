@@ -1,0 +1,7 @@
+{% if form.errors %}
+{{ form.errors }}
+{% endif %}
+<form method='POST'> {% csrf_token %}
+    {{ form.as_table }}
+    <button type='submit'>SAVE</button>
+</form>

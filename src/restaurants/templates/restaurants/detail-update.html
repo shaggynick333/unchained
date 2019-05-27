@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+<title>{% block head_title %}{{ form.instance.title }}  | Restaurants | {{block.super}}{% endblock head_title %}</title>
+{% block content %}
+<h3>{{form.instance.name}} <small>{{form.instance.category}}</small></h3>
+<p>{{form.instance.category}}</p>
+<hr/>
+<h4>Make Changes</h4>
+{% include 'snippets/form-snippet.html' with form=form %}
+{% endblock %}

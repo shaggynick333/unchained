@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+  <html lang=en>
+    <body>
+      {% include 'snippets/nav.html' %}
+      <div class="container">
+        <head>Here we Go</head>
+        {% include 'snippets/css.html' %}
+        {% block content %}
+        {% endblock %}
+        {% include 'snippets/js.html' %}
+    </body>
+  </html>
